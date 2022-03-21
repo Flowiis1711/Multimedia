@@ -243,8 +243,12 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
 
 .colorfullPanel{
   background-color: #333333;
+  border: 1px solid #ecd23b;
   color: #fff;
   transition: background-color 0.5s ease;
+  width: 250x;
+  height: 300px;
+  position: relative;
 }
 
 .colorfullPanel h3{
@@ -254,30 +258,31 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   position: relative;
 }
 
+.colorfullPanel img{
+    border:none;
+    width: 120;
+    height: 100px;
+    margin-bottom: 10px;
+  position: relative;
+}
+
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
+  background-color: #008CBA; /* Green */
+  border: 1px solid #ecd23b;
   color: white;
-  padding: 16px 32px;
-  font-family: myfont;
+  padding: 8px 18px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  position:relative;
 }
 
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid #4CAF50;
-}
 
-.button1:hover {
-  background-color: #4CAF50;
-  color: white;
+.button:hover {
+  background-color: #ecd23b;
+  color: rgb(20, 20, 20);
 }
 
 
