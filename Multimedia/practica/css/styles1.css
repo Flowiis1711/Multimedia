@@ -55,7 +55,7 @@ body{
 
 /*CARROUSEL*/
 
-.carrouselSection{
+#seccionslider{
     padding-top: 80px;
     padding-bottom: 80px;
     background-image:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url(../images/prueba2.jpg);
@@ -74,39 +74,11 @@ body{
     padding-bottom: 50px;
 }
 
-/* --- --- CONTENEDOR PRINCIPAL --- --- */
-
-.contenido-principal {
-	margin-bottom: 50px;
-	display: flex;
-	align-items: center;
-}
-
-.contenido-principal__imagen {
-	vertical-align: top;
-	margin-right: 20px;
-	width: 50%;
-	max-width: 550px;
-}
-
-.contenido-principal__contenedor {
-	width: 50%;
-}
-
-.contenido-principal__titulo {
-	font-weight: normal;
-	font-size: 14px;
-}
-
-.contenido-principal__resumen {
-	font-family: 'Open Sans', sans-serif;
-	line-height: 30px;
-	color: #CFCFCF;
-}
 
 /* --- --- CAROUSEL --- --- */
 .carousel__contenedor {
 	position: relative;
+    clear: both;
 }
 
 .carousel__anterior,
@@ -138,14 +110,23 @@ body{
 	right: -30px;
 }
 
+/* esconder scroll en firefox */
 .carousel__lista {
 	overflow: hidden;
 }
 
 .carousel__elemento {
 	text-align: center;
+    border-top: beige 3px solid;
 }
-
+.carousel__elemento > p{
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color: beige;
+    font-weight: bold;
+    text-transform:uppercase;
+    font-size: 20px;
+}
 
 .carousel__indicadores .glider-dot {
 	display: block;
@@ -153,7 +134,6 @@ body{
 	height: 4px;
 	background: #fff;
 	opacity: .2;
-	border-radius: 0;
 }
 
 .carousel__indicadores .glider-dot:hover {
@@ -164,15 +144,6 @@ body{
 	opacity: 1;
 }
 
-@media screen and (max-width: 800px) {
-	.contenido-principal {
-		flex-direction: column;
-	}
-
-	.contenido-principal > * {
-		width: 100%;
-	}
-} 
 
 /*
 ============================================
@@ -437,6 +408,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
     top: 0;
     left: 0;
     grid-area: header;
+    z-index: 100;
   }
   
   .nav {
